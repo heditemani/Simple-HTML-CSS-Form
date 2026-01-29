@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Mon CRM</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <span>🏢 Mon CRM</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Tableau de bord</a></li>
+                <li><a href="#"  id="button_page">Clients</a></li>
+                <li><a href="#">Tâches</a></li>
+                <li><a href="#">Rapports</a></li>
+            </ul>
+        </nav>
+        <div class="user">
+            <button>
+                <img src="sun.svg" alt="sun_icon">
+            </button>
+            <button class="btn_user">JD</button>
+        </div>
+    </header>
+    <main>
+        <div class="contaniner">
+            <h1>Ajouter un nouveau client</h1>
+            <label for="">Nom du Client</label>
+            <input type="text" placeholder="Ex : Jean Dupant">
+            <label for="">Adresse Email</label>
+            <input type="text" placeholder="Ex : jeandupont@exemple.fr">
+            <div class="phone_section">
+                <div class="indicatif-section flex">
+                    <label for="">Indicatif</label>
+                    <select name="" id="">
+                        <option value="">+33</option>
+                        <option value="">+216</option>
+                    </select>
+                </div>
+                <div class="phone_number_section flex">
+                    <label for="">Télèphone</label>
+                    <input type="number" placeholder="EX: 06 12 34 56 78">
+                </div>
+            </div>
+            <label for="">Adresse compléte</label>
+            <input type="text" placeholder="Ex: 15 rue de la paix, 75002 Paris">
+            <label for="">Entreprise</label>
+            <input id="entreprise_input" type="text" placeholder="Ex: Entreprise SARL">
+            <div class="client-preferences border">
+                <div class="header-preferences">Préférences du client</div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Recevoir la newsletter</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="promotions" name="promotions">
+                    <label for="promotions">Recevoir les promotions</label>
+                </div>
+            </div>
+            <div class="type-de-client border">
+                <div class="header-preferences type-text">Type de client</div>
+                <label for="" class="border cart">
+                    <div class="icon">👤</div>
+                    <div>Particulier</div>
+                </label>
+                <label for="" class="border cart">
+                    <div class="icon">🏢</div>
+                    <div>Entreprise</div>
+                </label>
+                <label for="" class="border cart">
+                    <div class="icon">🤝</div>
+                    <div>Partenaire</div>
+                </label>
+            </div>
+            <label for="">Notes supplémentaires</label>
+            <textarea class="border" name="" id="" rows="5" placeholder="Ajoutez des informations importantes sur ce client..."></textarea>
+
+            <div class="line-end"></div>
+
+            <div class="buttons">
+                <button class="end-btn ">Annuler</button>
+                <button class="end-btn">Suivant</button>
+            </div>
+
+        </div>
+    </main>
+    
+
+
+
+
+
+
+</body>
+</html>
